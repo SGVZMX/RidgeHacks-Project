@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Sacramento&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/79e6a29f03.js" crossorigin="anonymous"></script>
+        <title>Calendar</title>
+  </head>
+  <body>
+    <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul style="background-color:gray;" class="nav navbar-tabs center">
+                        <ul style="background-color: rgba(240,223,241, .5);" class="nav navbar-nav navbar-fixed-top">
+                            <li><a style="color: #9f7da1;" href="index.html">Home</a></li>
+                            <li><a style="color: #9f7da1;" href="calendar.html">Calendar</a></li>
+                            <li><a style="color: #9f7da1;" href="goals.html">Goals</a></li>
+                            <li class="active"><a style="color: #9f7da1;" href="mood.html">Mood</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+  <div style="background-color: transparent; margin-top:100px; text-align:center;" class="container bg-info d-flex align-items-center justify-content-center" align:center>
+    <h1 align="center">Mood for the day! + Weather :)</h1>
+    <h3>
+      What´s your mood today?
+      <img src="icecream.jpg" alt="icecream" width="100" height="100">
+    </h3>
+    <button type="button"
+    onclick="document.getElementById('demo').innerHTML = Date()">
+    Date & Time</button>
+    <p id="demo"></p>
+        <form action="/action_page.php">
+        <table style="width:100%">
+    <table id="mood-table" class="mood" align:"center">
+     <tr>
+        <th>3/8</th>
+      </tr>
+      <tr>
+        <td class="8mood not-selected" id="happyface2">&#128513 </td>
+        <td class="8mood not-selected" id="sadface2">&#128526 </td>
+        <td class="8mood not-selected" id="funnyface2">&#128533 </td>
+        <td class="8mood not-selected" id="angryface2">&#128540 </td>
+        <td class="8mood not-selected" id="worriedface2">&#128545 </td>
+        <td class="8mood not-selected" id="cryingface2">&#128552 </td>
+      </tr>
+      <tr>
+        <td class="8weather not-selected" id="partlysunny2">&#127780 </td>
+        <td class="8weather not-selected" id="partlycloudy2">&#127781 </td>
+        <td class="8weather not-selected" id="lightrain2">&#127782 </td>
+        <td class="8weather not-selected" id="heavyshower2">&#127783 </td>
+        <td class="8weather not-selected" id="tornado2"> &#127786</td> 
+        <td class="8weather not-selected" id="windy2">&#127788</td>
+      </tr>
+       <tr>
+        <th>3/9</th>
+      </tr>
+      <tr>
+        <td class="9mood not-selected" id="happyface3">&#128513 </td>
+        <td class="9mood not-selected" id="sadface3">&#128526 </td>
+        <td class="9mood not-selected" id="funnyface3">&#128533 </td>
+        <td class="9mood not-selected" id="angryface3">&#128540 </td>
+        <td class="9mood not-selected" id="worriedface3">&#128545 </td>
+        <td class="9mood not-selected" 
+    id="cryingface3">&#128552 </td>
+      </tr>
+      <tr>
+        <td class="9weather not-selected" id="partlysunny3">&#127780 </td>
+        <td class="9weather not-selected" id="partlycloudy3">&#127781 </td>
+        <td class="9weather not-selected" id="lightrain3">&#127782 </td>
+        <td class="9weather not-selected" id="heavyshower3">&#127783 </td>
+        <td class="9weather not-selected" id="tornado3"> &#127786</td> 
+        <td class="9weather not-selected" id="windy3">&#127788</td>
+      </tr>  
+     <tr>
+        <th>3/10</th>
+      </tr>
+      <tr>
+        <td class="10mood not-selected" 
+     id="happyface4">&#128513 </td>
+        <td class="10mood not-selected" id="sadface4">&#128526 </td>
+        <td class="10mood not-selected" id="funnyface4">&#128533 </td>
+        <td class="10mood not-selected" id="angryface4">&#128540 </td>
+        <td class="10mood not-selected" id="worriedface4">&#128545 </td>
+        <td class="10mood not-selected" id="cryingface4">&#128552 </td>
+      </tr>
+      <tr>
+        <td class="10weather not-selected" id="partlysunny4">&#127780 </td>
+        <td class="10weather not-selected" id="partlycloudy4">&#127781 </td>
+        <td class="10weather not-selected" id="lightrain4">&#127782 </td>
+        <td class="10weather not-selected" id="heavyshower4">&#127783 </td>
+        <td class="10weather not-selected" id="tornado4"> &#127786</td> 
+        <td class="10weather not-selected"  id="windy4">&#127788</td>
+      </tr> 
+    </table>
+  </div>
+ 
+  </body>
+      <script>
+        document.querySelectorAll('#mood-table td')
+      .forEach(e => e.addEventListener("click", function() {
+        const clickedOn = document.getElementById(event.srcElement.id);
+        clickedOn.classList.remove("not-selected");
+        clickedOn.classList.add("selected");
+      }));
+      </script>
+</html>
+
+  <style>
+      h1 {
+        font-family: Sacramento;  
+        font-size: 120px;
+      }
+    </style>

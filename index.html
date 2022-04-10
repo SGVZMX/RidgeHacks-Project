@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Bullet Journal</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Sacramento&display=swap" rel="stylesheet">
+  </head> 
+  <body>
+    <div class="container">
+      <div style="background-color: transparent;" class="jumbotron homepage-title">
+        <h1 align="center">
+        <img src="heart.jpg" alt="heart" width="150" height="150">
+        Bullet Journal - Homepage &#9829;
+        <img src="bird.jpg" alt="bird" width="100" height="100">
+        </h1> 
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="home-left-panel">
+            <h1 id="quote" class="random-quote"></h1>
+          </div>
+        <div class="col-sm-6 bars">
+                <div class="jumbotron space">
+                  <h1></h1>
+                </div>
+                <div class="jumbotron jumbotron-options" align="center">
+                    <a class="deco-none home-nav" href="calendar.html">
+                        <h1 style="color:#9f7da1;" class="deco-none">Calendar</h1>
+                    </a>
+                </div>
+                <div class="jumbotron space">
+                  <h1></h1>
+                </div>
+                <div class="jumbotron home-nav jumbotron-options" align="center">
+                    <a class="deco-none" href="mood.html">
+                        <h1 style="color:#9f7da1;" class="deco-none">Mood</h1>
+                    </a>
+                </div>
+                <div class="jumbotron space">
+                  <h1></h1>
+                </div>
+                <div class="jumbotron home-nav jumbotron-options" align="center">
+                    <a class="deco-none" href="goals.html">
+                        <h1 style="color:#9f7da1;" class="deco-none">Goals</h1>
+                    </a>
+                </div>
+            </div>
+      </div>
+    </div>
+  </body>
+
+    <script>
+    const random = Math.floor(Math.random() * 10);
+    console.log(random);
+
+      if(random == 0){
+        document.getElementById("quote").innerHTML = "The picture that you took with your camera is the imagination you want to create with reality<br>— Scott Lorenzo"
+      }else if(random == 1){
+        document.getElementById("quote").innerHTML = "Think like a queen. A queen is not afraid to fail. Failure is another stepping stone to greatness<br>— Oprah Winfrey"
+      }else if(random == 2){
+        document.getElementById("quote").innerHTML = "Take your victories, whatever they may be, cherish them, use them, but don’t settle for them<br>— Mia Hamm"
+      }else if(random == 3){
+        document.getElementById("quote").innerHTML = "I will not lose, for even in defeat, there’s a valuable lesson learned, so it evens up for me<br>— Jay Z"
+      }else if(random == 4){
+        document.getElementById("quote").innerHTML = "You cannot always control what goes on outside, but you can always control what goes on inside<br>— Wayne Dyer"
+      }else if(random == 5){
+        document.getElementById("quote").innerHTML = "The two most important days in your life are the day you’re born and the day you find out why<br>— Mark Twain"
+      }else if(random == 6){
+        document.getElementById("quote").innerHTML = "If the highest aim of a captain were to preserve his ship, he would keep it in port forever<br>— Thomas Aquinas"
+      }else if(random == 7){
+        document.getElementById("quote").innerHTML = "What lies behind you and what lies in front of you, pales in comparison to what lies inside of you<br>— Ralph Waldo Emerson"
+      }else if(random == 8){
+        document.getElementById("quote").innerHTML = "You’ll never get bored when you try something new. There’s really no limit to what you can do<br>— Dr. Seuss"
+      }else if(random == 9){
+        document.getElementById("quote").innerHTML = "Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence<br>— Helen Keller"
+      }else if(random == 10){
+        document.getElementById("quote").innerHTML = "It is life's principle and you have to accept it as it comes; nothing happens when nothing is done<br>— Israelmore Ayivor"
+      }
+    
+    </script>
+  
+</html>

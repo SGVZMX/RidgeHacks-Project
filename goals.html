@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Sacramento&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/79e6a29f03.js" crossorigin="anonymous"></script>
+        <title>Today's Goal</title>
+  </head>
+  <body>
+    <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="nav navbar-tabs center navbar-fixed-top">
+                        <ul class="nav navbar-nav">
+                            <li><a style="color: #9f7da1;" href="index.html">Home</a></li>
+                            <li><a style="color: #9f7da1;" href="calendar.html">Calendar</a></li>
+                            <li class="active"><a style="color: #9f7da1;" href="goals.html">Goals</a></li>
+                            <li><a style="color: #9f7da1;" href="mood.html">Mood</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+    </div>
+  </body>
+</html>
+
+<body>
+ <h1>
+Today's Goal
+   <img src="colorfularrowheart.jpg" alt="colorful arrow heart" width="100" height="100">
+ </h1>
+  <p>
+    <br>
+    What's your goal today?
+    <br>
+    <br>
+    <input type = "text" id = "goalBox1">
+    <button class="goalButton1" onclick="displayGoals1()">Enter</button>
+  </p>
+  <p id = "goalOutput1"> </p>
+  
+</body>
+
+<br>
+<div class="rectangle grey-rectangle"></div>
+
+<style>
+.rectangle{
+  height: 30px;
+  width: 300px;
+  margin-left: 575px;
+}
+
+.grey-rectangle{
+  background-color: lightgrey;
+}
+
+.pink-rectangle{
+  background-color: pink;
+}
+  
+.rectangleMargin1{
+  margin-left: 375px;
+  margin-top: 0px;
+}
+
+  .rectangleMargin2{
+  margin-left: 450px;
+  margin-top: -30px;
+}
+
+  .rectangleMargin3{
+  margin-left: 525px;
+  margin-top: -30px;
+}
+
+   .rectangleMargin4{
+  margin-left: 600px;
+  margin-top: -30px;
+}
+
+   .rectangleMargin5{
+  margin-left: 675px;
+  margin-top: -30px;
+}
+
+   .rectangleMargin6{
+  margin-left: 750px;
+  margin-top: -30px;
+}
+
+   .rectangleMargin7{
+  margin-left: 825px;
+  margin-top: -30px;
+}
+
+   .rectangleMargin8{
+  margin-left: 900px;
+  margin-top: -30px;
+}
+
+   .rectangleMargin9{
+  margin-left: 975px;
+  margin-top: -30px;
+}
+
+ .rectangleMargin10{
+  margin-left: 1050px;
+  margin-top: -30px;
+}
+  
+  h1 {
+  text-align: center;
+  font-family: Sacramento;  
+  font-size: 120px;
+  margin-top: 100px;
+ }
+  
+  p {
+  text-align: center;
+  font-family: Patrick Hand;
+  font-size: 48px;
+  }
+
+  li {
+  font-family: Patrick Hand;
+  font-size: 28px;
+  }
+
+  #goalBox1, .goalButton1{
+    border-radius: 20px;
+    border: 3px solid lightgrey;
+  }
+
+  .numberButton1 {
+    margin-left: 387px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 2px solid silver;
+  }
+  </style>
+
+
+  <script>
+  function displayGoals1() {
+    const goalInput1 = document.getElementById("goalBox1")
+    const goalOutput1 = document.getElementById("goalOutput1")
+    console.log (goalInput1.value)
+    goalOutput1.innerText = "Today's goal: " + goalInput1.value
+  }
+
+    </script>

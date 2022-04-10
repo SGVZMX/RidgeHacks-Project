@@ -1,0 +1,254 @@
+/* font-family: 'Patrick Hand', cursive;
+font-family: 'Sacramento', cursive; */
+
+body {
+    background-image: radial-gradient(#d6d6d6 3%, #ffffff 3%);
+    background-position: 0 15px;
+    background-size: 100px 100px;
+    height: 100%;
+    width: 100%;
+    color: #9f7da1;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.index-title{
+    font-family: 'Sacramento', cursive;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 2px 2px #E0BBE4;
+    margin-top: 300px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+.home-link{
+    text-decoration: none;
+    color: #7f7f7f;
+}
+
+.home-link:hover .title, .home-link:hover .arrow{
+    color: #7f7f7f;
+    text-decoration: none;
+    text-shadow: 3px 3px #c6a3c9;
+}
+
+.arrow{
+    color: #7f7f7f;
+    padding-left: 700px;
+    margin-bottom: -150px;
+    text-shadow: 2px 2px #E0BBE4;
+}
+
+.fa-cake-candles{
+    margin-left: 450px;
+    font-size: 100px;
+    text-shadow: 3px 3px #E0BBE4;
+}
+
+.fa-face-smile-beam{
+    font-size: 100px;
+}
+
+.material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+td, th {
+  border-style: hidden;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+  border-spacing: 40px;
+  cursor: pointer;
+}
+
+.mood {
+  font-size: 60px;
+}
+
+button:hover{
+  cursor:pointer;
+}
+
+.not-selected{
+  opacity: 50%;
+}
+
+td:hover{
+  opacity:100%;
+}
+
+.jumbotron{
+  background-color: #f0dff1;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.jumbotron-options{
+  background-color: #f0dff1;
+  opacity: 50%;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.jumbotron:hover{
+  opacity: 100%;
+}
+
+.first-jumbotron{
+  background-color: transparent;
+}
+.deco-none{
+  text-decoration: none;
+}
+h1.deco-none:hover{
+  text-decoration: none;
+  color: color: #7f7f7f;;
+}
+
+.home-nav{
+  color: gray;
+}
+
+.bars{
+  color: gray;
+  margin-left: 800px;
+  width: 700px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.random-quote{
+  font-family: 'Patrick Hand', cursive;
+  color: #9f7da1;
+  text-align: center;
+  font-size: 65px;
+  margin-right: 50px;
+  margin-top: 35px
+}
+
+.space{
+  background-color: transparent;
+  height: 20px;
+  padding: 0px 0px 0px 0px;
+}
+
+.home-left-panel{
+  float: left;
+  background-color: #f0dff1;
+  width: 750px;
+  padding-left: 35px;
+  margin-top: 25px;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.calendar {
+  width: 875px;
+  border: 15px solid #c6a3c9;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: 275px;
+  margin-top: 175px;
+}
+
+.cal{
+  background-color: #ffff;
+}
+
+.month {
+  font-size: 35px;
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  color: #ffff;
+  background-color: #c6a3c9;
+}
+
+.weekdays{
+  font-family: 'Patrick Hand', cursive;
+  font-size: 15px;
+  color: #ffff;
+  background-color: #c6a3c9;
+  margin-color: #c6a3c9;
+}
+
+.specWeek{
+  padding-right: 42.5px;
+}
+
+.passedDate {
+  background-color: rgba(236, 171, 242, .167);
+  color: #dfc6e2;
+}
+
+.date{
+  color: #ffffff;
+  background-color: #c6a3c9;
+  animation:dateBlinking 2.2s infinite;
+}
+
+@keyframes dateBlinking{
+  0% {
+    background-color: rgba(236, 171, 242, .167);
+  }
+  10% {
+    background-color: rgba(236, 171, 242, .334);
+  }
+  20% {
+    background-color: rgba(236, 171, 242, .501);
+  }
+  30% {
+    background-color: rgba(236, 171, 242, .668);
+  }
+  40% {
+    background-color: rgba(236, 171, 242, .835);
+  }
+  50% {
+    background-color: rgba(236, 171, 242, 1);
+  }
+  60% {
+    background-color: rgba(236, 171, 242, .835);
+  }
+  70% {
+    background-color: rgba(236, 171, 242, .668);
+  }
+  80%{
+    background-color: rgba(236, 171, 242, .501);
+  }
+  90%{
+    background-color: rgba(236, 171, 242, .334);
+  }
+  100%{
+    background-color: rgba(236, 171, 242, .167);
+  }
+}
+
+.homepage-title{
+  font-family: 'Sacramento', cursive;
+  font-size: 50px;
+}
+
+.navbar-tabs{
+  background-color: rgba(240,223,241, .5);
+  color: gray;
+  font-family:'Patrick Hand', cursive;
+  font-size: 28px;
+}
+
+.active{
+  background-color: rgba(240,223,241, 1);
+}
+
+.selected{
+  opacity: 100%;
+}
